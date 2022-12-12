@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script defer src="registration.js"></script>
+    <link rel="stylesheet" href="./registration.css" />
+</head>
+<body bgcolor="gray">
+    <center><h1>TKM COLLEGE OF ENGINEERING</h1>
+    <img src="logo.png"width="150"height="150">
+     <h2>STUDENT REGISTRATION FORM</h2></center>
+     <marquee><h2>MCA Admission 2022</h2></marquee>
+     <div class="container">
+     <form id="form" method="GET">
+      <div class="form first">
+        <div class="details personal">
+            <div class="fields">
+              <div class="input-field">
+            <label for="fname">Full Name:</label>
+            <input id="fname" name="fname" type="text">
+            <span class="error" id="fnameErr"></span>
+            
+            </div>
+            
+                <div class="input-field">
+                  <label for="dob">Date of Birth:</label><br>
+                  <input id="dob" name="dob" type="date">
+                  <span class="error" id="dobErr"></span>
+                  </div>
+            <div class="input-field">
+            <label for="faname">Father's Name:</label><br>
+            <input id="faname" name="faname" type="text">
+            <span class="error" id="fanameErr"></span>
+            </div>
+            <div class="input-field">
+            <label for="focc">Father's Occupation:</label><br>
+            <input id="focc" name="focc" type="text">
+            <span class="error" id="foccErr"></span>
+            </div>
+            <div class="input-field">
+            <label for="moname">Mother's Name:</label><br>
+            <input id="moname" name="lname" type="text">
+            <span class="error" id="monameErr"></span>
+            </div>
+            <div class="input-field">
+            <label for="faname">Mother's Occupation:</label><br>
+            <input id="mocc" name="mocc" type="text">
+            <span class="error" id="moccErr"></span>
+           </div>
+           <div class="input-field">
+            <label for="relegion">Relegion:</label><br>
+            <input id="relegion" name="relegion" type="text">
+            <span class="error" id="relegionErr"></span>
+           </div>
+           <div class="input-field">
+            <label for="caste">Caste:</label><br>
+            <input id="caste" name="caste" type="text">
+            <span class="error" id="casteErr"></span>
+            </div>
+            <div class="input-field">
+            <label for="gender">Gender:</label><br>
+            <input id="gender" name="gender" type="text">
+            <span class="error" id="genderErr"></span>
+            </div>
+            <div class="input-field">
+            <label for="phno">Phno:</label><br>
+            <input id="phno" name="phno" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><small>Format:123-456-7890</small>
+            <span class="error" id="phnoErr"></span>
+            </div>
+            <div class="input-field">
+            <label for="address">Address:</label> <br />
+            <input type="text" id="address" name="address">
+            <span class="error" id="addressErr"></span> <br />
+            </div>
+            <div class="input-field">
+              <label for="gmail">Email:</label><br>
+              <input id="gmail" name="gmail" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><small>Format:xyz@gmail.com</small>
+              <span class="error" id="gmailErr"></span>
+              </div>
+            <div class="input-field">
+            <label for="password">Password</label><br>
+            <input id="password" name="password" type="password">
+            <span class="error" id="passErr"></span>
+            </div>
+            <center><button type="submit">REGISTER</button></center>
+            </div>
+            </div>
+            </div>
+            </form>
+            </div>
+</body>
+</html>
