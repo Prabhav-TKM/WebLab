@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Img-Txt Hover</title>
+	<style type="text/css">
+	img{
+	width: 500px;
+    height: 300px;
+   }
+   #txt2{
+    display:none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+</head>
+<body bgcolor="violet">
+    <center>
+	<div id="main">
+		<div id="image-text">
+			<img src="html.png" id="img1">
+		</div>
+		<div id="head">
+			<h1 id="txt1">JavaScript
+				<p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area. </p>
+			</h1>
+			<h1 id="txt2">HTML
+				<p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+			</h1>
+		</div>
+	</div>
+    </center>
+
+
+		<script type="text/javascript">
+			document.getElementById('img1').addEventListener("mouseover",change1)
+			document.getElementById('img1').addEventListener("mouseout",change2)
+
+			function change1(){
+				document.getElementById('img1').src="html.png"
+				document.getElementById('txt1').style.display="none"
+				document.getElementById('txt2').style.display="block"
+			}
+
+			function change2(){
+				document.getElementById('img1').src="JavaScriptLogo.png"
+				document.getElementById('txt1').style.display="block"
+				document.getElementById('txt2').style.display="none"
+			}
+
+		</script>
+
+</body>
+</html>

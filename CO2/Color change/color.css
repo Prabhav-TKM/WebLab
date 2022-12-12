@@ -1,0 +1,21 @@
+div
+{
+    color:red
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: 6px;
+    max-width: 200px;
+    background-color: yellow;
+}
